@@ -2,7 +2,6 @@ import React from "react";
 import "./footer.css";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub, FaInstagramSquare } from "react-icons/fa";
-import Certificate from "./../certificate/certificate";
 
 const Footer = () => {
   const href = "#";
