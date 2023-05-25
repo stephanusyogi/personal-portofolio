@@ -74,4 +74,10 @@
     padding: 2rem 0;
     margin: 0 auto;
   }
+
+  .certificate__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
 }

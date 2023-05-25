@@ -74,4 +74,16 @@
     padding: 2rem 0;
     margin: 0 auto;
   }
+
+  .experience__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .experience__content_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
 }
