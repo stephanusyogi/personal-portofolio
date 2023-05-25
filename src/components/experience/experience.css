@@ -61,6 +61,10 @@
   .experience__content {
     padding: 1rem;
   }
+
+  .experience__content_2 {
+    padding: 1rem;
+  }
 }
 
 /* --------------MEDIA QUERIES (SMALL DEVICES)-------------------- */
