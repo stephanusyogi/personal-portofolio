@@ -1,14 +1,14 @@
 import React from "react";
 import "./portfolio.css";
+import iambenih from "../../assets/portfolio-iambenih.PNG";
+import yourpensiontracker from "../../assets/portfolio-yourpensiontracker.PNG";
+import hospitalsistem from "../../assets/portfolio-hospitalsistem.PNG";
 import reta from "../../assets/portfolio-reta.png";
 import widyabhakti from "../../assets/portfolio-widyabhakti.png";
 import m1 from "../../assets/portfolio-m1.png";
-import alhadi from "../../assets/portfolio-alhadi.png";
 import chatapp from "../../assets/portfolio-chatapp.png";
 import delrecipe from "../../assets/portfolio-delrecipe.png";
 import emart from "../../assets/portfolio-emart.png";
-import fluxo from "../../assets/portfolio-fluxo.png";
-import restourant from "../../assets/portfolio-restourant.png";
 
 const Portfolio = () => {
   const href = "#";
@@ -17,6 +17,82 @@ const Portfolio = () => {
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
+        <article className="portfolio__items">
+          <div className="portfolio__items-image">
+            <img src={hospitalsistem} alt="portfolio-stephanus-yogi" />
+          </div>
+          <h3>Hospital Sistem</h3>
+          <p>
+            The hospital inpatient medical record information system website
+            uses the Sveltekit, Node, Express and MongoDB architectures
+          </p>
+          <div className="portfolio__items-cta">
+            <a
+              href="https://github.com/stephanusyogi/hospital-sistem"
+              className="btn"
+            >
+              Github
+            </a>
+            <a
+              href="/"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-primary"
+            >
+              Live
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__items">
+          <div className="portfolio__items-image">
+            <img src={yourpensiontracker} alt="portfolio-stephanus-yogi" />
+          </div>
+          <h3>Pensiun Fund Tracker</h3>
+          <p>
+            Website to find out the value of pension investment instruments such
+            as Defined Contribution Retirement, Personal Finance, and others.
+            Using CodeIgniter and Laravel Framework
+          </p>
+          <div className="portfolio__items-cta">
+            <a
+              href="https://github.com/stephanusyogi/pensiun-fund-tracker"
+              className="btn"
+            >
+              Github
+            </a>
+            <a
+              href="https://yourpensiontracker.id"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-primary"
+            >
+              Live
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__items">
+          <div className="portfolio__items-image">
+            <img src={iambenih} alt="portfolio-stephanus-yogi" />
+          </div>
+          <h3>Iambenih</h3>
+          <p>
+            UMKM website that provides superior and best seeds products for
+            consumers throughout Indonesia using Wordpress Divi Builder
+          </p>
+          <div className="portfolio__items-cta">
+            <a href="/" className="btn">
+              Github
+            </a>
+            <a
+              href="https://www.iambenih.com/"
+              rel="noreferrer"
+              target="_blank"
+              className="btn btn-primary"
+            >
+              Live
+            </a>
+          </div>
+        </article>
         <article className="portfolio__items">
           <div className="portfolio__items-image">
             <img src={reta} alt="portfolio-stephanus-yogi" />
@@ -92,28 +168,10 @@ const Portfolio = () => {
           </div>
         </article>
       </div>
+      <br />
+      <br />
       <h2>Learning & Other Projects</h2>
       <div className="container portfolio__container">
-        <article className="portfolio__items">
-          <div className="portfolio__items-image">
-            <img src={alhadi} alt="portfolio-stephanus-yogi" />
-          </div>
-          <h3>MA PLUS Al-Hadi</h3>
-          <p>Slicing UI from Figma Design into HTML, CSS(LESS), JS.</p>
-          <div className="portfolio__items-cta">
-            <a href={href} className="disable-btn btn">
-              Github
-            </a>
-            <a
-              href="https://alhadi.netlify.app/"
-              rel="noreferrer"
-              target="_blank"
-              className="btn btn-primary"
-            >
-              Live
-            </a>
-          </div>
-        </article>
         <article className="portfolio__items">
           <div className="portfolio__items-image">
             <img src={chatapp} alt="portfolio-stephanus-yogi" />
@@ -180,47 +238,6 @@ const Portfolio = () => {
               rel="noreferrer"
               target="_blank"
               className="btn btn-primary"
-            >
-              Live
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__items">
-          <div className="portfolio__items-image">
-            <img src={fluxo} alt="portfolio-stephanus-yogi" />
-          </div>
-          <h3>Fluxo</h3>
-          <p>Slicing UI from Figma Design into HTML, CSS(LESS), JS.</p>
-          <div className="portfolio__items-cta">
-            <a href={href} className="disable-btn btn">
-              Github
-            </a>
-            <a
-              href={href}
-              rel="noreferrer"
-              target="_blank"
-              className="disable-btn btn btn-primary"
-              aria-disabled="true"
-            >
-              Live
-            </a>
-          </div>
-        </article>
-        <article className="portfolio__items">
-          <div className="portfolio__items-image">
-            <img src={restourant} alt="portfolio-stephanus-yogi" />
-          </div>
-          <h3>Restourant Landing</h3>
-          <p>Slicing UI from Figma Design into HTML, CSS(LESS), JS.</p>
-          <div className="portfolio__items-cta">
-            <a href={href} className="disable-btn btn" aria-disabled="true">
-              Github
-            </a>
-            <a
-              href={href}
-              rel="noreferrer"
-              target="_blank"
-              className="disable-btn btn btn-primary"
             >
               Live
             </a>

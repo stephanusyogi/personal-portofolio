@@ -3,6 +3,8 @@ import "./nav.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiBook, BiMessageSquareDetail } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
+import { FaLaptopCode } from "react-icons/fa";
+import { BsCardChecklist } from "react-icons/bs";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -36,6 +38,20 @@ const Nav = () => {
         onClick={() => setActiveNav("#portfolio")}
       >
         <RiServiceLine />
+      </a>
+      <a
+        href={activeNav}
+        className={activeNav === "#job" ? "active" : ""}
+        onClick={() => setActiveNav("#job")}
+      >
+        <FaLaptopCode />
+      </a>
+      <a
+        href={activeNav}
+        className={activeNav === "#certificate" ? "active" : ""}
+        onClick={() => setActiveNav("#certificate")}
+      >
+        <BsCardChecklist />
       </a>
       <a
         href={activeNav}
